@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% include "header.html" %}
+{% block body %}
+<style>
+    div{
+    text-align:center ;
+    padding: 100px;
+    }
+</style>
+<div class="container">
+<h1>You have completed analyzing 103 images. To re-do it again for different user , click below.</h1>
+<a  class="btn btn-dark" href="/">Analyze Again!</a>
+</div>
+{% endblock %}
+
+{% include "footer.html" %}

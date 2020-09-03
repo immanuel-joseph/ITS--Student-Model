@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="getFirstImage()">
+	
+<div>
+<h1>Answer the following question!</h1>
+<p>What is the emotion depicted on the image displayed?</p>
+</div>
+<form class="container">
+		<img id="emotionImage" src="" width="107" height="98">
+	
+<br/><br/>
+<div style="text-align: center;font-size: 25px" >
+
+<input class="emotion" type="radio" name="emotion" value="happy" id="happy" onchange="getValue(this)">
+<label class="emotion" for="happy">Happy</label><br>
+
+<input class="emotion" type="radio" name="emotion" value="fear" id="fear" onchange="getValue(this)">
+<label class="emotion" for="fear">Fear</label><br>
+
+<input class="emotion" type="radio" name="emotion" value="disgust" id="disgust" onchange="getValue(this)">
+<label  class="emotion" for="disgust">Disgust</label><br>
+
+<input class="emotion" type="radio" name="emotion" value="surprised" id="surprised" onchange="getValue(this)">
+<label class="emotion" for="surprised">Surprised</label><br>
+
+<input class="emotion" type="radio" name="emotion" value="angry" id="angry" onchange="getValue(this)">
+<label class="emotion" for="angry">Angry</label><br>
+
+<input class="emotion" type="radio" name="emotion" value="contempt" id="contempt" onchange="getValue(this)">
+<label class="emotion" for="contempt">Contempt</label><br>
+
+<input class="emotion" type="radio" name="emotion" value="sad" id="sad" onchange="getValue(this)">
+<label class="emotion" for="sad">Sad</label><br>
+
+</div>
+<div id="div2">
+<button type="button" onclick="getReverseImage(")>Previous</button>
+<button type="button" onclick="getImage()">Next</button>
+</div>
+</form>
+</body>
+<script type="text/javascript" src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="app.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</html>

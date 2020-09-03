@@ -1,0 +1,47 @@
+body{
+	/*background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5),url("image.jpg"));*/
+	background-position: center;
+	background-size: cover;
+	background-color:#FFD700;
+
+}
+
+.login-box
+{
+	max-width: 700px;
+	float: none;
+	margin: 150px auto;
+	border: 20px solid #20B2AA;
+	padding: 50px;
+}
+	
+}
+
+.login-left
+{
+ background: rgba(211,211,211,0.5);
+ padding: 30px;
+}
+.login-left
+{
+ background: #000;
+ padding: 30px;
+ color: white;
+ opacity: 0.5;
+}
+
+#emoticons{
+	font-size: 5rem;
+	color:#FFD700;
+	background-color: #20B2AA; 
+}
+
+.hoverover:hover{
+	color:#778899 ;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+h1:hover{
+	color: #CD5C5C;
+	text-shadow: 2px 2px 4px #000000;
+}

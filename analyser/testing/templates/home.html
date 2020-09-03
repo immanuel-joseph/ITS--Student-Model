@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% include "header.html" %}
+
+{% block body %}
+
+<br>
+<br>
+<br>
+<div class="jumbotron">
+  <h1 class="display-4">ML Model Analyzer</h1>
+    <p class="lead">This is a simple analyzer, which is connected to a <strong>SVM model</strong> which is used to analyze how well the model has learned 11 different users response to a set of 103 images.</p>
+  <hr class="my-4">
+  <p>This analyzer displays the image and the emotion it depicts alongside the predicted answer and the username that is affiliated to it.</p>
+  <p class="lead">
+   <button class="btn btn-dark" id="myButton">Analyze</button>
+  </p>
+</div>
+
+
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "main";
+    };
+</script>
+
+{% endblock %}
+
+{% include "footer.html" %}

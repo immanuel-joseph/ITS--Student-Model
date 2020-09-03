@@ -1,0 +1,64 @@
+
+{% include "header.html" %}
+{% block body %}
+
+<div class="login centered row  ">
+    <div class="box-model col-sm">
+
+
+        <form action="{{url_for('displayimg')}}" method="get">
+             <img src="static/{{images}}">
+            <br>
+            <button type="submit" class="btn btn-dark  " id="displayImg">Next Image </button>
+
+
+        </form>
+        <form action="{{url_for('predict')}}" method="post">
+
+            <br>
+            <h5> <span>Origin Emotion:</span> {{originval}}</h5>
+             <br>
+
+            <h5> <span>Predicted answer:</span> {{prediction_text}}</h5>
+            <br>
+
+            <h5> <span>User Name:</span> {{users}}</h5>
+            <label for="users">Choose an User's learning model:</label>
+
+            <select name="users" id="users">
+                <option value="">Select User</option>
+              <option value="15">UserZero</option>
+              <option value="36">UserOne</option>
+              <option value="37">UserTwo</option>
+              <option value="38">UserThree</option>
+                <option value="39">UserFour</option>
+              <option value="40">UserFive</option>
+              <option value="41">UserSix</option>
+              <option value="42">UserSeven</option>
+                <option value="43">UserEight</option>
+              <option value="44">UserNine</option>
+              <option value="45">UserTen</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-dark " id="predictbtn"> Predict </button>
+
+
+        </form>
+
+</div>
+   <div class="box-model col-sm">
+       <h2>Instructions to use</h2>
+       <ul>
+           <li>Initially the first image is displayed by default</li>
+           <li>To view next image click on "Next Image" button</li>
+           <li>Using the drop down list, select the user-name.</li>
+           <li>Click on predict button, to let the analyzer display the model's prediction.</li>
+       </ul>
+   </div>
+</div>
+
+{% endblock %}
+
+{% include "footer.html" %}
+
