@@ -14,7 +14,7 @@ This application has multiple pages revolving around it, such as login-page, mai
 in a conventional relational database table. Bootstrap is used for enriching the user-experience, since this application is focused for students of age 14-18 diagnosed with Aspergers
 Syndrome.
 
-#Python-Machine Learning
+# Python-Machine Learning
 
 Directory: https://github.com/immanuel-joseph/ITS--Student-Model/tree/master/model
 
